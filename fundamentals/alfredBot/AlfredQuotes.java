@@ -9,17 +9,18 @@ public class AlfredQuotes {
     
     public String guestGreeting(String name) {
         // YOUR CODE HERE
-        return "place holder for guest greeting return string";
+        return "Hello " + name + ", welcome home";
     }
     
     public String dateAnnouncement() {
         // YOUR CODE HERE
-        return "place holder for date announcement return string";
+        Date date = new Date();
+        return "Today's date is " + date;
     }
     
     public String respondBeforeAlexis(String conversation) {
         // YOUR CODE HERE
-        return "for snarky response return string";
+        return conversation; 
     }
     
 	// NINJA BONUS
