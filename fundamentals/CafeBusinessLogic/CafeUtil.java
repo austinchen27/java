@@ -3,11 +3,9 @@ import java.util.Arrays;
 
 public class CafeUtil {
   int getStreakGoal() {
-    int temp = 0;
     int num = 0;
     for(int i = 0; i < 11; i++) {
-      temp = i;
-      num += temp;
+      num += i;
     }
     return num;
   }

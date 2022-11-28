@@ -9,7 +9,7 @@ public class AlfredQuotes {
     
     public String guestGreeting(String name) {
         // YOUR CODE HERE
-        return "Hello " + name + ", welcome home";
+        return "Hello " + name + ", welcome home.";
     }
     
     public String dateAnnouncement() {
