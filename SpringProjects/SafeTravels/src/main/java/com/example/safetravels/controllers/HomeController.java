@@ -48,7 +48,7 @@ public class HomeController {
 		return "edit.jsp";
 	}
 	
-	@PutMapping("expenses/edit/{id}") // Update Expense
+	@PutMapping("expenses/edit/{id}") // Update Expense (use PUT for edit/update, POST creates new)
 	public String update(@Valid @ModelAttribute("expense") Expense expense, BindingResult result) {
 		if (result.hasErrors()) {
 			return "edit.jsp";
@@ -58,7 +58,7 @@ public class HomeController {
 		}
 	}
 	
-	@DeleteMapping("expenses/delete/{id}") // Delete Expense
+	@DeleteMapping("expenses/delete/{id}") // Delete Expense (emphasis on security)
 	public String deleteExpense(@PathVariable("id") Long id) {
 		expenseService.deleteExpense(id);
 		return "redirect:/expenses";

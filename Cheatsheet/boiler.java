@@ -7,8 +7,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page isErrorPage="true" %> 
 <!-- Above for forms and errors -->
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>  
-<!-- Above for edit -->
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>  
+<!-- Above for form:form -->
 
 // ========================================================= //
 
@@ -78,6 +78,19 @@ spring.mvc.hiddenmethod.filter.enabled=true
         <groupId>com.mysql</groupId>
         <artifactId>mysql-connector-j</artifactId>
         <scope>runtime</scope>
+    </dependency>
+
+    <!-- BCRYPT -->
+    <dependency>
+        <groupId>org.mindrot</groupId>
+        <artifactId>jbcrypt</artifactId>
+        <version>0.4</version>
+    </dependency>
+
+    <!-- VALIDATION -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
 
     <!-- BOOTSTRAP -->
